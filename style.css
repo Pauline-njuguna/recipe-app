@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: burlywood; */
+  background-image: url(./assets/bck..jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.container {
+  background-color: antiquewhite;
+  margin: 1rem;
+  padding: 2rem 3.5rem;
+  width: 40%;
+  border-radius: 0.5em;
+  height: fit-content;
+}
+.search-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 2rem;
+}
+/* .search-container H1{
+    align-content: center;
+} */
+.search-container input {
+  font-size: 1.2em;
+  padding: 0.5em;
+  border: none;
+  outline: none;
+  width: 90%;
+  background: none;
+  border-bottom: 3px solid black;
+  transition: all ease 300ms;
+  border-radius: 8px;
+}
+.search-container input:hover,
+.search-container input:active {
+  border-bottom: 3px solid red;
+}
+.search-container button {
+  font-size: 1em;
+  background-color: azure;
+  border: none;
+  border-radius: 0.5em;
+  font-weight: 500;
+}
+.image {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+
+.image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
